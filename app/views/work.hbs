@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Список ботов</title>
+    <meta charset="utf-8" />
+</head>
+<body>
+    <h1>Список ботов</h1>
+    <p><a href="/create">Добавить бота</a></p>
+    <table>
+        <tr><th>Имя бота</th><th>Состояние</th><th></th></tr>
+        {{#each users}}
+            <tr>
+                <td>{{this.name_bot}}</td>
+                <td>{{this.state}}</td>
+                <td>
+                    <a href="/edit/{{this.id}}">  Edit</a>|
+                    <form action="delete/{{this.id}}" method="POST" style="display:inline;">
+                        <input type="submit" value="Delete" />
+                    </form>
+                </td>
+            </tr>
+        {{/each}}
+    </table>
+	<br><br>
+	<a href="/"  >Сменить пользователя</a>
+</body>
+<html>
