@@ -1,0 +1,22 @@
+{
+  "name": "web2_users_bot",
+  "version": "1.0.0",
+  "description": "Web2_user's_bot",
+  "main": "app.js",
+  "author": {
+    "name": ""
+  },
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "hbs": "^4.1.1",
+    "mysql2": "^2.2.5"
+  },
+  "devDependencies": {
+    "jasmine-node": "^3.0.0"
+  }
+}

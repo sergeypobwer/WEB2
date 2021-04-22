@@ -7,8 +7,8 @@ const urlencodedParser = bodyParser.urlencoded({extended: false});
  
 const pool = mysql.createPool({
   connectionLimit: 5,
-  host: "localhost",
-  user: "root",
+  host: "db",
+  user: "mysql",
   database: "users",
   password: "Ric1090sRic1090s"
 });
